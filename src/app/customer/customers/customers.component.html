@@ -1,0 +1,17 @@
+<form (ngSubmit)="searchCustomer()" class="p-4">
+    <label for="name">Enter Customer name</label>
+    <input type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="Customer name">
+    <button class="btn btn-primary mt-3">search</button>
+</form>
+
+<div *ngFor="let cust of customers">
+    <div class="container">
+        <div class="border p-3">
+            <p>{{cust.name}}</p>
+            <p>{{cust.mobile}}</p>
+            <p>{{cust.email}}</p>
+        </div>
+        <button (click)="toggleUpdateCust()" class="btn btn-warning">Update</button>
+        <button (click)="delCustomer(cust)" class="btn btn-danger del">delete</button>
+    </div>
+</div>

@@ -1,0 +1,126 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "dharani",
+      "email": "dharani7@gmail.com",
+      "password": "Hello"
+    },
+    {
+      "id": 3,
+      "username": "kiran",
+      "email": "kiran7@gmail.com",
+      "password": "Hello",
+      "bussinessName": "Dharani",
+      "address": "21,nhb colony,goyyathope"
+    },
+    {
+      "id": "4",
+      "username": "tyler Durden",
+      "email": "tyler7@gmail.com",
+      "password": "Hello",
+      "bussinessName": "Soap mechanic",
+      "address": ""
+    },
+    {
+      "username": "dharani",
+      "password": "Hello",
+      "id": "p13ukd5"
+    },
+    {
+      "username": "admin",
+      "password": "admin",
+      "id": "4I744sN"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "Bag",
+      "price": "40"
+    },
+    {
+      "title": "Shoe",
+      "price": "200",
+      "id": 4
+    },
+    {
+      "title": "Pencil",
+      "price": "3",
+      "id": 5
+    }
+  ],
+  "bills": [
+    {
+      "id": 1,
+      "customer": "Dharani",
+      "lineItems": 3,
+      "products": "pen",
+      "quantity": 4
+    },
+    {
+      "customer": "kiran",
+      "products": "bag",
+      "lineItems": "2",
+      "quantity": "3",
+      "id": 2
+    },
+    {
+      "customer": "gfhglkjg",
+      "products": "ryft",
+      "lineItems": "5",
+      "quantity": "98",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "customer": "kiran",
+      "products": "speaker",
+      "lineItems": "3",
+      "quantity": "6"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "customer": [
+    {
+      "id": 1,
+      "name": "Dharani",
+      "mobile": "367369813781",
+      "email": "kiran7@gmail.com"
+    },
+    {
+      "name": "Kiran",
+      "mobile": "9500097315",
+      "email": "dharani7@gmail.com",
+      "id": 2
+    },
+    {
+      "name": "Dharani kiran",
+      "mobile": "9500097315",
+      "email": "dharani7@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "tyler",
+      "mobile": "57558373373",
+      "email": "soapmechanic@gmail.com",
+      "id": 4
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

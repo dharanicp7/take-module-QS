@@ -1,0 +1,6 @@
+<form (ngSubmit)="addCustomer()" class="p-5">
+<input class="form-control" [(ngModel)]="custName" type="text" name="custName" placeholder="Customer Name">
+<input class="form-control mt-3" [(ngModel)]="custMob" type="text" name="custMob" placeholder="Customer Mobile">
+<input class="form-control mt-3" [(ngModel)]="custEmail" type="text" name="custEmail" placeholder="Customer Email">
+<button class="btn btn-primary form-control mt-3" type="submit">Add</button>
+</form>

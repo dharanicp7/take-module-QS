@@ -1,0 +1,21 @@
+<div *ngFor="let user of users">
+    <div class="content-center p-4">
+        <div class="account p-3">
+            <div class="row"> 
+                <img class="col-4 mt-2" src="https://icon-library.com/images/profile-png-icon/profile-png-icon-24.jpg" alt="id pic">
+                <div class="col-6 mt-4">
+                   
+                <h3 class="">{{user.username}}</h3>
+                <p>{{user.email}}</p>
+                </div>
+                <div class="btm-del col-2">
+                    <button class=" btn btn-danger btn-sm" (click)="deleteUser(user)">del</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">    
+    <h1>You are successfully logged in</h1>    
+    <button (click)="logout()" class="btn btn-danger">Logout</button>    
+  </div>   

@@ -1,0 +1,10 @@
+<div class="container">
+    <form (ngSubmit)="onAddBill($event)">
+        <input type="text" class="form-control mt-4" name="id" [(ngModel)]="id" placeholder="id">
+        <input type="text" class="form-control mt-2 " name="customer" [(ngModel)]="customer" placeholder="customer">
+        <input type="text" class="form-control mt-2" name="products" [(ngModel)]="products" placeholder="product"> 
+        <input type="text" class="form-control mt-2" name="lineItems" [(ngModel)]="lineItems" placeholder="lineItems">
+        <input type="text" class="form-control mt-2" name="quantity" [(ngModel)]="quantity" placeholder="quantity">
+        <button class="btn btn-primary form-control mt-2 p-1">Generate</button>
+    </form>
+</div>

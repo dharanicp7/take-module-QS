@@ -1,0 +1,8 @@
+<div class="container  mt-3">
+    <h4>Add new product</h4>
+    <form (ngSubmit)="onSubmit($event)">
+        <input type="text" class="form-control mt-3" name="title" [(ngModel)]="title" placeholder="Product Name">
+        <input type="text" class="form-control mt-3" name="price" [(ngModel)]="price" placeholder="Product Price">
+        <button class="btn btn-success  mt-3">Add</button>
+    </form>
+</div>

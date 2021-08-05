@@ -1,0 +1,25 @@
+
+<div *ngFor="let prod of products" class="container">
+    <div class="border border-success rounded mt-3 p-3">
+        <div class="mb-4">
+            <h5>{{prod.title}}</h5>
+            <p>${{prod.price}}</p>
+            <button (click)="toggleUpdateProd()" class="btn btn-warning">Update</button>
+            <button (click)="delProduct(prod)" class="btn btn-danger del">delete</button>
+        </div>
+        <div *ngIf = "showUpdateProd" class="form mt-3">
+            <hr>
+            <h5>Update Product</h5>
+            <form (ngSubmit)="onUpdate(prod)">
+                <!-- <input type="radio" id="changeTitle" name="change" value="title">
+                <label for="changeTitle">Update product name</label>
+                <input type="radio" id="changePrice" name="change" value="price">
+                <label for="changePrice">Update product price</label> -->
+                <input class="form-control mt-3" placeholder="Product Name" type="text" id="name" [(ngModel)]="name" name="name"><br>
+                <input class="form-control" placeholder="Product Price" type="text" id="price" [(ngModel)]="price" name="price">
+                <button class="btn btn-success mt-3">Save Changes</button>
+            </form>
+        </div>
+    </div>
+
+</div>

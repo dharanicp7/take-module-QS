@@ -1,0 +1,15 @@
+<div class="container">
+<h5>Search a product</h5>
+    <form (ngSubmit)="searchProduct()">
+        <input type="text" name="title" [(ngModel)]="title" placeholder="Enter product title" class="form-control">
+        <button class="mt-3 btn btn-success">Search</button>
+    </form>
+<div *ngFor="let prod of products">
+    <div class="container">
+        <h4>{{prod.title}}</h4>
+        <p>id:{{prod.id}}</p>
+        <p>price:{{prod.price}}</p>
+    </div>
+    
+</div>
+</div>

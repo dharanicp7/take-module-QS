@@ -1,0 +1,20 @@
+.register-box {
+    width: 350px;
+    height: 500px;
+    /* background-color: blueviolet; */
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 20px;
+    position: relative;
+    background-color: white;
+  }
+  .reg-in {
+    width: 80%;
+    margin: auto;
+  }
+  .form {
+    margin-top: 25%;
+  }
+  
