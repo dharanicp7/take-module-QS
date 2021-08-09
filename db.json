@@ -7,14 +7,6 @@
       "password": "Hello"
     },
     {
-      "id": 3,
-      "username": "kiran",
-      "email": "kiran7@gmail.com",
-      "password": "Hello",
-      "bussinessName": "Dharani",
-      "address": "21,nhb colony,goyyathope"
-    },
-    {
       "id": "4",
       "username": "tyler Durden",
       "email": "tyler7@gmail.com",
@@ -23,14 +15,25 @@
       "address": ""
     },
     {
-      "username": "dharani",
-      "password": "Hello",
-      "id": "p13ukd5"
-    },
-    {
       "username": "admin",
       "password": "admin",
       "id": "4I744sN"
+    },
+    {
+      "username": "suganth",
+      "email": "hhhhjh@gmail.com",
+      "password": "Hello",
+      "bussinessName": "suganth sai",
+      "address": "opp:Annai Milk center",
+      "id": "Qv5au7H"
+    },
+    {
+      "username": "Hari",
+      "email": "Hnklnakn@gsn.com",
+      "password": "K22f8wvkaiUTfiK",
+      "bussinessName": "sdgag",
+      "address": "ZGSDg",
+      "id": "huHISiQ"
     }
   ],
   "products": [
@@ -45,7 +48,7 @@
       "id": 4
     },
     {
-      "title": "Pencil",
+      "title": "Pen",
       "price": "3",
       "id": 5
     }

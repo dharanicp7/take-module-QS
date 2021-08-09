@@ -20,22 +20,22 @@ import { AuthGuard } from './services/auth-guard.service';
 // import { AuthGuard } from './services/auth-guard.service';
 
 const routes: Routes = [
-  {path:'users', component:UserRouteComponent ,children:[
+  {path:'', component:UserRouteComponent ,children:[
     {path:'register', component:RegisterComponent},
-    {path:'account', component:UserInfoComponent,canActivate:[AuthGuard]},
+    {path:'account', component:UserInfoComponent},
     {path:'', component:LoginComponent}
   ]},
-  {path:'customer',component:CustRouteComponent ,children:[
+  {path:'customer',component:CustRouteComponent,canActivate:[AuthGuard] ,children:[
     {path:'home',component:HomeComponent},
     {path:'newcust',component:AddCustComponent},
     {path:'search',component:CustomersComponent}
   ]},
-  {path:'product',component:ProductRouteComponent,children:[
+  {path:'product',component:ProductRouteComponent,canActivate:[AuthGuard],children:[
     {path:'',component:ProductHomeComponent},
     {path:'new-product',component:NewProductComponent},
     {path:'search',component:SearchComponent}
   ]},
-  {path:'bill',component:BillRouteComponent,children:[
+  {path:'bill',component:BillRouteComponent,canActivate:[AuthGuard],children:[
     {path:'',component:BillHomeComponent},
     {path:'new-bill',component:BillNewComponent},
     {path:'search',component:BillSearchComponent}

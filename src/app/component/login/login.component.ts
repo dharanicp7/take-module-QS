@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
 
   constructor(private auth:AuthenticationService, private route: Router) {
     if(this.auth.loggedIn){
-      this.route.navigate(['/users/account'])
+      this.route.navigate(['/account'])
     }
    }
 
@@ -23,12 +23,14 @@ export class LoginComponent implements OnInit {
  login():void{
    if(this.username != ''&& this.password != ""){
      if(this.auth.login(this.username,this.password)){
-       this.route.navigate(['/users/account']);
+       this.route.navigate(['/account']);
      }
      else {
        alert("Wrong username or password");
      }
+
    }
+   this.password="";
  }
  
 }

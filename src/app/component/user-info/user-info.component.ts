@@ -25,6 +25,6 @@ this.userService.delUser(user).subscribe(() => this.users = this.users.filter(u 
 }
 logout(){
   this.authenticationService.logout();
-  this.router.navigate(['/users']);
+  this.router.navigate(['/']);
 }
 }
