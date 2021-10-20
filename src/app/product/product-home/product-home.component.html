@@ -6,9 +6,11 @@
             <p>${{prod.price}}</p>
             <button (click)="toggleUpdateProd()" class="btn btn-warning">Update</button>
             <button (click)="delProduct(prod)" class="btn btn-danger del">delete</button>
+            <button (click)="addCart(prod)" class="btn btn-success del">Add to Cart</button>
         </div>
         <div *ngIf = "showUpdateProd" class="form mt-3">
             <hr>
+            <!-- <div *ngFor=""> -->
             <h5>Update Product</h5>
             <form (ngSubmit)="onUpdate(prod)">
                 <!-- <input type="radio" id="changeTitle" name="change" value="title">
@@ -19,7 +21,8 @@
                 <input class="form-control" placeholder="Product Price" type="text" id="price" [(ngModel)]="price" name="price">
                 <button class="btn btn-success mt-3">Save Changes</button>
             </form>
-        </div>
+        <!-- </div> -->
+    </div>
     </div>
 
 </div>

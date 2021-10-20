@@ -1,20 +1,19 @@
-import { Injectable, Output,EventEmitter } from '@angular/core'; 
+import { Injectable } from '@angular/core'; 
 @Injectable({  
   providedIn: 'root'  
 })  
-export class AuthenticationService {  
-   @Output() log: EventEmitter<boolean> =new EventEmitter<boolean>();
+export class AuthenticationService { 
 
   login(username: string, password: string):any {  
-    this.log.emit(true);
     if (username == "admin" && password == "admin") {  
       localStorage.setItem('currentUser', "loggedin");  
+      // localStorage.setItem('log','true');
       return true;  
     }  
 
   }  
   logout() {  
-    this.log.emit(false);
+    // localStorage.setItem('log','false');
     localStorage.removeItem('currentUser');   
   }  
   public get loggedIn(): boolean {  

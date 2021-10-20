@@ -26,20 +26,12 @@
       "bussinessName": "suganth sai",
       "address": "opp:Annai Milk center",
       "id": "Qv5au7H"
-    },
-    {
-      "username": "Hari",
-      "email": "Hnklnakn@gsn.com",
-      "password": "K22f8wvkaiUTfiK",
-      "bussinessName": "sdgag",
-      "address": "ZGSDg",
-      "id": "huHISiQ"
     }
   ],
   "products": [
     {
       "id": 1,
-      "title": "Bag",
+      "title": "Pencil",
       "price": "40"
     },
     {
@@ -51,6 +43,13 @@
       "title": "Pen",
       "price": "3",
       "id": 5
+    }
+  ],
+  "cart": [
+    {
+      "id": 1,
+      "title": "Bag",
+      "price": "40"
     }
   ],
   "bills": [

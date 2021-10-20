@@ -4,6 +4,7 @@ import { BillHomeComponent } from './bills/bill-home/bill-home.component';
 import { BillNewComponent } from './bills/bill-new/bill-new.component';
 import { BillRouteComponent } from './bills/bill-route/bill-route.component';
 import { BillSearchComponent } from './bills/bill-search/bill-search.component';
+import { CartComponent } from './cart/cart.component';
 import { LoginComponent } from './component/login/login.component';
 import { RegisterComponent } from './component/register/register.component';
 import { UserInfoComponent } from './component/user-info/user-info.component';
@@ -39,7 +40,8 @@ const routes: Routes = [
     {path:'',component:BillHomeComponent},
     {path:'new-bill',component:BillNewComponent},
     {path:'search',component:BillSearchComponent}
-  ]}
+  ]},
+  {path:'cart',component:CartComponent}
   
 ];
 

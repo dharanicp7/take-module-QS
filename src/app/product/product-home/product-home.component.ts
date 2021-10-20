@@ -11,6 +11,7 @@ import { UiService } from '../ui.service';
 })
 export class ProductHomeComponent implements OnInit {
   products!:Product[];
+  prods!:Product[];
   name!:string;
   price!:number;
   updateId!:any;
@@ -57,5 +58,9 @@ this.productService.getProducts().subscribe(products=>this.products=products);
     
     this.name="";
     
+  }
+  addCart(prod:Product){
+this.productService.addOnCart(prod).subscribe(products=>this.prods=products);
+console.log(this.prods);
   }
 }

@@ -9,6 +9,8 @@ import { Product } from './Product';
 export class ProductService {
   private apiUrl='http://localhost:5000/products';
   // private apiUrl='https://fakestoreapi.com/products';
+  private cartUrl="http://localhost:5000/cart";
+
 
   constructor(private http : HttpClient) { }
 
@@ -27,5 +29,8 @@ return this.http.get<Product[]>(`${this.apiUrl}?title=${title}`);
   }
   updateProduct(prod:Product){
     return this.http.put(`${this.apiUrl}/${prod.id}`,prod);
+  }
+  addOnCart(prod:Product){
+    return this.http.post<Product[]>(this.cartUrl,prod)
   }
 }

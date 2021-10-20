@@ -18,13 +18,14 @@ export class UserInfoComponent implements OnInit {
   ngOnInit(): void {
     // this.users=this.userService.getUsers();
     this.userService.getUsers().subscribe(users =>this.users = users);
+    console.log(this.users)
   }
 deleteUser(user:User){
 console.log(user);
 this.userService.delUser(user).subscribe(() => this.users = this.users.filter(u => u.id !== user.id))
 }
-logout(){
-  this.authenticationService.logout();
-  this.router.navigate(['/']);
-}
+// logout(){
+//   this.authenticationService.logout();
+//   this.router.navigate(['/']);
+// }
 }

@@ -25,6 +25,10 @@ import { BillHomeComponent } from './bills/bill-home/bill-home.component';
 import { BillNewComponent } from './bills/bill-new/bill-new.component';
 import { BillSearchComponent } from './bills/bill-search/bill-search.component';
 import { BillRouteComponent } from './bills/bill-route/bill-route.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSliderModule } from '@angular/material/slider';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -46,14 +50,18 @@ import { BillRouteComponent } from './bills/bill-route/bill-route.component';
     BillHomeComponent,
     BillNewComponent,
     BillSearchComponent,
-    BillRouteComponent
+    BillRouteComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    FontAwesomeModule,
+    MatSliderModule,
+    BrowserAnimationsModule
   ],
   providers: [AuthenticationService],
   bootstrap: [AppComponent]

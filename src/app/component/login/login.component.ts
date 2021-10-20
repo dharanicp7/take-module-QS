@@ -11,11 +11,10 @@ import { AuthenticationService } from 'src/app/services/auth.service';
 export class LoginComponent implements OnInit {
   username!: string;
   password!: string;
-  title='auth-guard-demo';
 
   constructor(private auth:AuthenticationService, private route: Router) {
     if(this.auth.loggedIn){
-      this.route.navigate(['/account'])
+      this.route.navigate(['/product'])
     }
    }
 
@@ -23,7 +22,8 @@ export class LoginComponent implements OnInit {
  login():void{
    if(this.username != ''&& this.password != ""){
      if(this.auth.login(this.username,this.password)){
-       this.route.navigate(['/account']);
+       this.route.navigate(['/product']);
+       window.location.reload();
      }
      else {
        alert("Wrong username or password");
