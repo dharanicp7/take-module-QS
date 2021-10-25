@@ -6,7 +6,7 @@
     background: #c0c0aa;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to top, #1cefff, #c0c0aa);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top, #1cefff, #c0c0aa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    /* background-size: 100%; */
+    background-size: 100%;
     width: 100%;
-    
+    height: 100%;
 }

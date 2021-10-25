@@ -31,16 +31,16 @@
   "products": [
     {
       "id": 1,
-      "title": "Pencil",
+      "title": "Product",
       "price": "40"
     },
     {
-      "title": "Shoe",
+      "title": "Product",
       "price": "200",
       "id": 4
     },
     {
-      "title": "Pen",
+      "title": "Product",
       "price": "3",
       "id": 5
     }
@@ -48,8 +48,18 @@
   "cart": [
     {
       "id": 1,
-      "title": "Bag",
+      "title": "Product",
       "price": "40"
+    },
+    {
+      "title": "Product",
+      "price": "200",
+      "id": 4
+    },
+    {
+      "title": "Product",
+      "price": "3",
+      "id": 5
     }
   ],
   "bills": [

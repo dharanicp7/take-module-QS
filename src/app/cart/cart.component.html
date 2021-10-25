@@ -1,19 +1,20 @@
 <div class="container cart">
-<h2 class="mt-4 text-center">Shopping cart</h2>
+<h1 class="mt-4 text-center">Shopping cart</h1>
 
 <div class="container row p-5">
     <div class="container col-7 grad-box p-4">
-        <h3 class="mt-4">cart ({{products.length}} items)</h3>
+        <h2 class="mt-4">cart ({{products.length}} items)</h2>
         <div *ngFor="let prod of products">
 <div class="mt-4 container row">
 <div class="col-4">
-<img src="https://cdn.shopify.com/s/files/1/0011/9783/4252/products/20_375a8763-f5d7-4184-a352-4523ef713733_900x.jpg?v=1576267132">
+<!-- <img src="https://cdn.shopify.com/s/files/1/0011/9783/4252/products/20_375a8763-f5d7-4184-a352-4523ef713733_900x.jpg?v=1576267132"> -->
+<div class="pro1"></div>
 </div>
 <div class="col-8">
 <div class="row">
     <div class="col-8">
-        <h6>{{prod.title}}</h6>
-        <p>desp</p>
+        <h3>{{prod.title}}</h3>
+        <p>This a line of description of the product.</p>
         <p>size</p>
     </div>
     <div class="col-4">
@@ -26,10 +27,11 @@
     </div>
     <div class="row">
         <div class="col-8">
-            <button class="btn btn-danger" (click)="deleteCartItem(prod)">Delete</button>
+            <p>$ {{prod.price}}</p>
         </div>
 <div class="col-4">
-    <p>$ {{prod.price}}</p>
+    
+    <button class="btn btn-dange" (click)="deleteCartItem(prod)"><i class="fas fa-trash-alt"></i></button>
 </div>
     </div>
     
@@ -39,7 +41,7 @@
 </div>
     <div class="col-5"> 
         <div class="grad-box p-4">
-<h5 class="">The total amount of</h5>
+<h2 class="">The total amount of</h2>
 <table class="mt-3">
     <tr>
         <td>Temporary amount</td>

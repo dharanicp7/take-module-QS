@@ -1,21 +1,21 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid p-3">
-      <a class="navbar-brand" href="#">CompanyName</a>
+      <a class="navbar-brand" href="#">SellerWeb</a>
       <div class="ms-auto">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup1" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup1">
         <div class="navbar-nav text-start">
-          <a class="nav-link active" aria-current="page" routerLink="/" routerLinkActive="active">Home</a>
+          <a class="nav-link active" aria-current="page" routerLink="/" routerLinkActive="active"><i class="fas fa-home"></i></a>
           <a *ngIf="!token" class="nav-link" routerLink="/register">Register</a>
           <a *ngIf="!token" class="nav-link" routerLink="">Login</a>
-          <a *ngIf="token" class="nav-link" routerLink="/account">Info</a>
-          <a *ngIf="token" class="nav-link" routerLink="/customer/home">Customer</a>
-          <a *ngIf="token" class="nav-link" routerLink="/product">Products</a>
-          <a *ngIf="token" class="nav-link" routerLink="/bill">bills</a>
-          <a *ngIf="token" class="nav-link text-white btn-danger" (click)="logingOut()"></a>
-          <a class="nav-link" routerLink="/cart">cart</a>
+          <!-- <a *ngIf="token" class="nav-link" routerLink="/account">Info</a> -->
+          <!-- <a *ngIf="token" class="nav-link" routerLink="/customer/home">Customer</a> -->
+          <!-- <a *ngIf="token" class="nav-link" routerLink="/product">Products</a> -->
+          <!-- <a *ngIf="token" class="nav-link" routerLink="/bill">bills</a> -->
+          <a class="nav-link" routerLink="/cart"><i class="fas fa-shopping-cart"></i></a>
+          <a *ngIf="token" class="nav-link" (click)="logingOut()"><i class="fas fa-sign-out-alt"></i></a>
         </div>
     </div>
     </div>
